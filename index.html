@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <h1 class="heading">Weather Data</h1>
+    <div class="inner-body">
+        <form action="" class="content">
+            <div class="input">
+                <input type="text" placeholder="Enter City" class="city" id="input-city" name="city">
+                <button type="submit" class="submit" id="search-btn" for="city">Search</button>
+            </div>
+            <h1 class="sub-heading city-name"></h2>
+                <div class="main-data">
+                    <div class="temp-info">
+                        <p></p>
+                    </div>
+                    <div class="condition-info">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="location">
+                    <h3 class="field-head">Loaction:</h3>
+                    <div class="location-info">
+                        <p class="lan"></p>
+                        <p class="lon"></p>
+                    </div>
+                </div>
+                <div class="air_quality">
+                    <h3 class="field-head">Air Quality:</h3>
+                    <div class="air-info">
+                        <p class="co"></p>
+                        <p class="no2"></p>
+                        <p class="o3"></p>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

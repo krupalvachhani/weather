@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.heading{
+    background-color: #302869;
+    color: #fff;
+    height: 100px;
+    line-height: 100px;
+}
+.inner-body{
+    background-color:rgba(94, 128, 229, 0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    flex-direction: column;
+}
+.sub-heading{
+    text-align: center;
+}
+.content{
+    background-color: rgb(211, 211, 211);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.input{
+    display: flex;
+    padding: 5px;
+}
+.city{
+    text-align: left;
+    padding: 5px;
+    outline: 0px;
+    font-size: 0.9rem;
+}
+.submit{
+    padding: 5px;
+    display: flex;
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    border-radius: 5px;
+}
+.temp-info{
+    font-size: 3rem;
+}
+.condition-info{
+    font-size: 1.2rem;
+}
+.main-data{
+    padding: 2rem;
+}
+.field-head{
+    text-align: left;
+}
+.location-info,.air-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.location{
+    margin-bottom: 0.7rem;
+}
