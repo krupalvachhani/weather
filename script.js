@@ -13,12 +13,12 @@ let o3level=document.querySelector('.air-info .o3');
 let cityname=document.querySelector('.city-name');
 
 async function current(position){
-    let data=await getdatafromlatilong(position.coords.latitude,position.coords.longitude);
-    print(data);
+    let data1=await getdatafromlatilong(position.coords.latitude,position.coords.longitude);
+    await print(data1);
 }
 async function bydefault(){
-    let data=await getdatafromlatilong(21.5222,70.4579);
-    print(data);
+    let data2=await getdatafromlatilong(21.5222,70.4579);
+    await print(data2);
 }
 
 async function getdatafromlatilong(lati,long){
@@ -34,8 +34,8 @@ async function getdatafromcitie(citie){
 navigator.geolocation.getCurrentPosition(current,bydefault);
 searchbtn.addEventListener('click',async(e)=>{
     e.preventDefault();
-    let data=await getdatafromcitie(cityele.value);
-    print(data);
+    let data3=await getdatafromcitie(cityele.value);
+    await print(data3);
 })
 
 function print(data){
