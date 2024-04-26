@@ -22,12 +22,12 @@ async function bydefault(){
 }
 
 async function getdatafromlatilong(lati,long){
-    let promise=await fetch(`http://api.weatherapi.com/v1/current.json?key=5b4e80c0d1de463a9b570239242004&q=${lati},${long}&aqi=yes`);
+    let promise=await fetch(`https://api.weatherapi.com/v1/current.json?key=5b4e80c0d1de463a9b570239242004&q=${lati},${long}&aqi=yes`);
     return data=await promise.json();
 }
 
 async function getdatafromcitie(citie){
-    let promise=await fetch(`http://api.weatherapi.com/v1/current.json?key=5b4e80c0d1de463a9b570239242004&q=${citie}&aqi=yes`);
+    let promise=await fetch(`https://api.weatherapi.com/v1/current.json?key=5b4e80c0d1de463a9b570239242004&q=${citie}&aqi=yes`);
     return data=await promise.json();
 }
 
